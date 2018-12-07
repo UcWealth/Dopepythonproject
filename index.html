@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Correct website</title>
+	<link rel="stylesheet" type="text/css" href="
+	style.css">
+	<script type="text/javascript">
+		function changeColor(color){
+			document.body.style.backgroundColor= color;
+		}
+	</script>
+</head>
+<body>
+<div id="Correct">
+	
+	<form>
+		<p>Click a button to change the page color</p>
+		<fieldset>
+			<input type="button" name="teal" value="teal" onclick="document.body.style.backgroundColor= 'teal' " />
+			<input type="button" name="peach" value="peach" onclick="document.body.style.backgroundColor= 'peachpuff' " />
+			<input type="button" name="lime" value="lime" onclick="document.body.style.backgroundColor= 'lime' " />
+	    </fieldset><br><br>
+
+<!-- Code below works with a js function to do the same thing that the above code does -->
+	    <p>Select an option to change the page color</p>
+	    <fieldset>
+		    <select>
+		    	<option selected="true" onclick="changeColor('white')">Pick a Colour</option>
+		    	<option onclick="changeColor('red')">Red</option>
+		    	<option onclick="changeColor('blue')">Blue</option>
+		    	<option onclick="changeColor('yellow')">Yellow</option>
+		    	<option onclick="changeColor('orange')">Orange</option>
+		    	<option onclick="changeColor('purple')">Purple</option>
+		    </select>
+		</fieldset>
+	</form>
+</div>
+
+
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
